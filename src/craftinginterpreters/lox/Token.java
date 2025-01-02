@@ -1,3 +1,4 @@
+package craftinginterpreters.lox;
 
 public class Token {
     final TokenType type;
@@ -12,6 +13,7 @@ public class Token {
         this.line = line;
     }
 
+    @Override
     public String toString() {
         return type + " " + lexeme + " " + literal;
     }
